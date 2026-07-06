@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Velorisma – The Grand Resort & Spa Hotel</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>  <body>
+
+  <!-- ===================== HEADER / NAV ===================== -->
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="nav-logo">
+        <span class="logo-name">VELORISMA</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#rooms">ROOMS</a></li>
+        <li><a href="#reservation">RESERVATION</a></li>
+        <li><a href="#restaurant">RESTAURANT</a></li>
+        <li><a href="#spa">SPA</a></li>
+        <li><a href="#events">EVENTS</a></li>
+      </ul>
+      <a href="#reservation" class="nav-cta">PROFILE</a>
+      <button class="hamburger" id="hamburger-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+      </button>
+    </nav>
+
+    <div class="mobile-overlay" id="mobile-menu">
+      <ul class="mobile-nav-links">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#rooms">ROOMS</a></li>
+        <li><a href="#reservation">RESERVATION</a></li>
+        <li><a href="#restaurant">RESTAURANT</a></li>
+        <li><a href="#spa">SPA</a></li>
+        <li><a href="#events">EVENTS</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-welcome">W E L C O M E &nbsp; T O</p>
+        <h1 class="hero-title">
+          <span class="hero-the">The Grand</span>
+          <span class="hero-resort">RESORT &amp; SPA HOTEL</span>
+        </h1>
+        <p class="hero-brand">VELORISMA</p>
+      </div>
+    </section>
+
+    <div class="hero-actions">
+          <a href="#about" class="btn btn-outline">LEARN MORE</a>
+          <a href="#reservation" class="btn btn-gold">RESERVE</a>
+          <a href="#info" class="btn btn-outline">CONTACT US</a>
+    </div>
+
+
+    <!-- Logo Ticker Wrapper -->
+<div class="logo-ticker">
+    <div class="ticker-track">
+        <!-- The first set of logos -->
+        <div class="logo-group">
+            <img src="pics/logos/logo.png" alt="Velorisma Logo Group">
+            <img src="pics/logos/logo.png" alt="Velorisma Logo Group">
+            <img src="pics/logos/logo.png" alt="Velorisma Logo Group">
+        </div>
+        <!-- The second identical set for the seamless loop -->
+        <div class="logo-group">
+            <img src="pics/logos/logo.png" alt="Velorisma Logo Group">
+            <img src="pics/logos/logo.png" alt="Velorisma Logo Group">
+            <img src="pics/logos/logo.png" alt="Velorisma Logo Group">
+        </div>
+    </div>
+</div>
+
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="about" id="about">
+      <div class="container">
+        <p class="about-text">
+          <strong>VELORISMA</strong> IS A PREMIER COASTAL DESTINATION WHERE LUXURY MEETS THE PULSE OF THE OCEAN.
+          LOCATED DIRECTLY ON A PRISTINE BEACH, OUR RESORT OFFERS A PERFECT BALANCE OF SERENE
+          RELAXATION AND HIGH-ENERGY EXCITEMENT. SPEND YOUR DAYS LOUNGING BY OUR INFINITY POOL OR
+          INDULGING IN A REJUVENATING TREATMENT AT OUR WORLD-CLASS SANCTUARY <i>SPA</i>. AS EVENING FALLS,
+          ENJOY A CULINARY JOURNEY IN OUR OCEAN-VIEW <i>RESTAURANT</i> BEFORE DIVING INTO THE VIBRANT
+          ENERGY OF OUR EXCLUSIVE <i>NIGHTCLUB</i>. FROM SUNSET ACOUSTIC SESSIONS TO ELITE MUSIC EVENTS,
+          EVERY MOMENT HERE IS DESIGNED TO BE UNFORGETTABLE.
+        </p>
+
+
+        <!-- Gallery row -->
+      <div class="gallery-container">
+           <div class="gallery-row" id="gallery">
+           <div class="gallery-item"><img src="pics/hotelPics/pic1.png"></div>
+           <div class="gallery-item"><img src="pics/hotelPics/pic2.png"></div>
+           <div class="gallery-item"><img src="pics/hotelPics/pic3.png"></div>
+           <div class="gallery-item"><img src="pics/hotelPics/pic4.png"></div>
+           <div class="gallery-item"><img src="pics/hotelPics/pic5.png"></div>
+           <div class="gallery-item"><img src="pics/hotelPics/pic6.jpg"></div>
+           <div class="gallery-item"><img src="pics/hotelPics/pic7.jpg"></div>
+           <div class="gallery-item"><img src="pics/hotelPics/pic8.jpg"></div>
+           <div class="gallery-item"><img src="pics/hotelPics/pic9.jpg"></div>
+           <div class="gallery-item"><img src="pics/hotelPics/pic10.jpg"></div>
+         </div>
+
+         <button class="scroll-btn right" onclick="scrollGallery(1)">&#10095;</button>
+      </div>
+
+
+  
+  <div class="info-flex" id = "info">
+    
+    <!-- Card 1: Made wider with .location-card -->
+    <div class="info-card location-card">
+      <h3 class="card-title">LOCATION</h3>
+      <div class="stats-row">
+        <div class="stat-item">
+          <span class="icon">🌊</span>
+          <span class="stat-number">20 METERS</span>
+          <span class="stat-label">TO THE BEACH</span>
+        </div>
+        <div class="stat-item">
+          <span class="icon">🌳</span>
+          <span class="stat-number">2.5 HECTARES</span>
+          <span class="stat-label">PRIVATE ESTATE</span>
+        </div>
+        <div class="stat-item">
+          <span class="icon">🚗</span>
+          <span class="stat-number">20 MINUTES</span>
+          <span class="stat-label">TO CITY CENTER</span>
+        </div>
+      </div>
+      <p class="description">
+        SPANNING A LUSH, CAREFULLY CURATED TERRITORY, THE HOTEL OFFERS AN UNPARALLELED SENSE OF FREEDOM AND OPEN SPACE, ENSURING THAT EVERY GUEST FINDS THEIR OWN QUIET CORNER OF PARADISE.
+      </p>
+    </div>
+
+    <!-- Card 2: Google Map -->
+    <div class="info-card ">
+      <h3 class="card-title">GOOGLE MAP</h3>
+      <div class="address-box">
+        <a href="https://www.google.com/maps/search/+GONIO-KVARIATI+COASTAL+ROAD/@41.5560737,41.5438495,14z/data=!3m1!4b1!5m1!1e1?entry=ttu&g_ep=EgoyMDI2MDQyOS4wIKXMDSoASAFQAw%3D%3D" class="address-link">📍 GONIO-KVARIATI COASTAL ROAD, <br/>BATUMI, GEORGIA</a>
+      </div>
+      <div class="map-container">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2954.5!2d41.6167!3d41.5833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406787d2e9a5a4d1%3A0x0!2sBatumi%2C+Georgia!5e0!3m2!1sen!2sus!4v1700000000000"></iframe>
+      </div>
+    </div>
+
+    <!-- Card 3: Socials -->
+    <div class="info-card">
+      <h3 class="card-title">SOCIALS</h3>
+      <div class="content-group social">
+        <!-- Instagram Link -->
+        <a href="https://www.instagram.com/VELORISMA" target="_blank" class="contact-item social-link">
+          <img src="pics/icons/insta-icon.png" class="custom-icon insta-icon">
+          <span class="contact-text">@VELORISMA</span>
+        </a>
+
+        <!-- Facebook Link -->
+        <a href="https://www.facebook.com/VELORISMA.HOTEL" target="_blank" class="contact-item social-link">
+          <img src="pics/icons/fb-icon.png"  class="custom-icon fb-icon">
+          <span class="contact-text">@VELORISMA.HOTEL</span>
+        </a>
+      </div>
+
+      <h3 class="card-title">CONTACT</h3>
+      <div class="content-group contact">
+        <div class="contact-item">
+          <img src="pics/icons/phone-icon.png"  class="custom-icon phone-icon">
+          <span class="contact-text">+995 599 47 71 78</span>
+        </div>
+        <a href="mailto:VELORISMA@GMAIL.COM" target="_blank" class="contact-item mail-link">
+          <img src="pics/icons/mail-icon.png"  class="custom-icon mail-icon">
+          <span class="contact-text mail-text">VELORISMA@GMAIL.COM</span>
+        </a>  
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<div class="video-banner">
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="pics/Video.mp4"video/mp4">
+  </video>
+</div>
+
+    <!-- ===================== ROOMS ===================== -->
+    <section class="rooms-section" id="rooms">
+      <div class="container">
+        <h2 class="section-title">R O O M S</h2>
+
+        <!-- Rooms Filter Bar -->
+        <div class="rooms-filter">
+          <div class="filter-pills">
+            <span class="pill active">ALL</span>
+            <span class="pill">CATEGORY</span>
+            <span class="pill">ROOM TYPE</span>
+            <span class="pill">VIEW</span>
+          </div>
+          <span class="filter-label">FILTER</span>
+        </div>
+
+        <!-- Room Cards Grid -->
+        <div class="rooms-grid">
+
+          <!-- Card 1 -->
+          <div class="room-card">
+            <div class="room-card__img">
+              <img src="pics/rooms-pic/image1.png"
+                   alt="Azure Deluxe Suite with sea view" />
+              <span class="room-badge">SUITE</span>
+            </div>
+            <div class="room-card__body">
+              <h3>AZURE DELUXE SUITE</h3>
+              <p class="room-meta">👤 2 | SEA VIEW | 45M²</p>
+              <p class="room-desc">Direct ocean views, 30m from the shore.</p>
+              <div class="room-card__footer">
+                <span class="room-price">$200</span>
+                <a href="#reservation" class="btn btn-gold book">BOOK</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="room-card">
+            <div class="room-card__img">
+              <img src="pics/rooms-pic/image2.png"
+                   alt="Panoramic Horizon King room" />
+              <span class="room-badge">DELUXE</span>
+            </div>
+            <div class="room-card__body">
+              <h3>PANORAMIC HORIZON KING</h3>
+              <p class="room-meta">👤 2 | PANORAMIC | 45M²</p>
+              <p class="room-desc">180° coastal vista &amp; wrap-around balcony.</p>
+              <div class="room-card__footer">
+                <span class="room-price">$250</span>
+                <a href="#reservation" class="btn btn-gold book">BOOK</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="room-card">
+            <div class="room-card__img">
+              <img src="pics/rooms-pic/image3.png"
+                   alt="Shoreline Standard room with beach access" />
+              <span class="room-badge">STANDARD</span>
+            </div>
+            <div class="room-card__body">
+              <h3>SHORELINE STANDARD</h3>
+              <p class="room-meta">👤 1 | SEA VIEW | 35M²</p>
+              <p class="room-desc">Modern elegance with private beach access.</p>
+              <div class="room-card__footer">
+                <span class="room-price">$150</span>
+                <a href="#reservation" class="btn btn-gold book">BOOK</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="room-card room-card--featured">
+            <div class="room-card__img">
+              <img src="pics/rooms-pic/image4.png"
+                   alt="Velorisma Penthouse with private rooftop pool" />
+              <span class="room-badge room-badge--gold">PENTHOUSE</span>
+            </div>
+            <div class="room-card__body">
+              <h3>VELORISMA PENTHOUSE</h3>
+              <p class="room-meta">👤 4 | FULL VIEW | 90M²</p>
+              <p class="room-desc">Ultimate luxury with a private rooftop pool.</p>
+              <div class="room-card__footer">
+                <span class="room-price">$320</span>
+                <a href="#reservation" class="btn btn-gold book">BOOK</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="room-card">
+            <div class="room-card__img">
+              <img src="pics/rooms-pic/image5.png"
+                   alt="Garden Sanctuary Suite surrounded by lush greenery" />
+              <span class="room-badge">SUITE</span>
+            </div>
+            <div class="room-card__body">
+              <h3>GARDEN SANCTUARY SUITE</h3>
+              <p class="room-meta">👤 2 | GARDEN | 48M²</p>
+              <p class="room-desc">Lush greenery within our 15-hectare estate.</p>
+              <div class="room-card__footer">
+                <span class="room-price">$180</span>
+                <a href="#reservation" class="btn btn-gold book">BOOK</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="room-card">
+            <div class="room-card__img">
+              <img src="pics/rooms-pic/image6.png"
+                   alt="Standard Coast Room for solo travellers" />
+              <span class="room-badge">STANDARD</span>
+            </div>
+            <div class="room-card__body">
+              <h3>STANDARD COAST ROOM</h3>
+              <p class="room-meta">👤 1 | COAST | 30M²</p>
+              <p class="room-desc">Sleek, essential luxury for solo travelers.</p>
+              <div class="room-card__footer">
+                <span class="room-price">$150</span>
+                <a href="#reservation" class="btn btn-gold book">BOOK</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="room-card">
+            <div class="room-card__img">
+              <img src="pics/rooms-pic/image7.png"
+                   alt="Deluxe Garden Terrace with expansive patio" />
+              <span class="room-badge">DELUXE</span>
+            </div>
+            <div class="room-card__body">
+              <h3>DELUXE GARDEN TERRACE</h3>
+              <p class="room-meta">👤 2 | GARDEN | 42M²</p>
+              <p class="room-desc">High-end finishes and expansive patio space.</p>
+              <div class="room-card__footer">
+                <span class="room-price">$250</span>
+                <a href="#reservation" class="btn btn-gold book">BOOK</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div class="room-card">
+            <div class="room-card__img">
+              <img src="pics/rooms-pic/image8.png"
+                   alt="Standard Atrium Room with architectural courtyard view" />
+              <span class="room-badge">STANDARD</span>
+            </div>
+            <div class="room-card__body">
+              <h3>STANDARD ATRIUM ROOM</h3>
+              <p class="room-meta">👤 2 | ATRIUM | 38M²</p>
+              <p class="room-desc">Quiet, architectural view of the inner court.</p>
+              <div class="room-card__footer">
+                <span class="room-price">$150</span>
+                <a href="#reservation" class="btn btn-gold book">BOOK</a>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </section>
+
+<!--Rooms pages-->
+  <nav class="pages">
+    <span class="filter-label nav-text">PREVIOUS</span>
+    <span class="arrow">&lt;</span>
+    
+    <span class="filter-label active">1</span>
+    <span class="filter-label">2</span>
+    <span class="filter-label">3</span>
+    <span class="filter-label">4</span>
+    <span class="filter-label">5</span>
+    <span class="dots">...</span>
+    <span class="filter-label">9</span>
+    <span class="filter-label">10</span>
+    
+    <span class="arrow">&gt;</span>
+    <span class="filter-label nav-text">NEXT</span>
+  </nav>
+
+    <!-- ===================== RESERVATION ===================== -->
+    <section class="reservation-section" id="reservation">
+    <div class="container">
+        <h2 class="section-title light">R E S E R V A T I O N</h2>
+        <p class="section-subtitle light">FILL FORM FOR DIRECT BOOKING</p>
+    </div>
+
+    <div class="reservation-layout">
+
+        <!-- Quick availability sidebar -->
+        <div class="check-avail">
+            <div class="avail-card">
+                <h3>CHECK AVAILABILITY</h3>
+                <form class="avail-form" action="#" method="get">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="checkin">CHECK IN</label>
+                            <input type="date" id="checkin" name="checkin" />
+                        </div>
+                        <div class="form-group">
+                            <label for="checkout">CHECK OUT</label>
+                            <input type="date" id="checkout" name="checkout" />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="guests-quick">GUESTS</label>
+                            <select id="guests-quick" name="guests">
+                                <option>1 Adult</option>
+                                <option selected>2 Adults</option>
+                                <option>2 Adults, 1 Child</option>
+                                <option>2 Adults, 2 Children</option>
+                                <option>4 Guests</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>PRICE RANGE</label>
+                            <select name="price">
+                                <option>$100 – $150</option>
+                                <option>$150 – $250</option>
+                                <option>$250 – $350</option>
+                                <option selected>$100 – $350</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-gold check">CHECK AVAILABILITY</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Full Reservation Form -->
+        <div class="res-form-card">
+            <h3>COMPLETE YOUR RESERVATION</h3>
+            <form class="res-form" action="#" method="post">
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fname">First Name *</label>
+                        <input type="text" id="fname" name="fname" placeholder="John" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="lname">Last Name *</label>
+                        <input type="text" id="lname" name="lname" placeholder="Doe" required />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" placeholder="john@example.com" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="room-select">Room Type *</label>
+                    <select id="room-select" name="room">
+                        <option value="">— Select a Room —</option>
+                        <option value="azure-suite">Azure Deluxe Suite – $200/night</option>
+                        <option value="panoramic-king">Panoramic Horizon King – $250/night</option>
+                        <option value="shoreline-std">Shoreline Standard – $150/night</option>
+                        <option value="penthouse">Velorisma Penthouse – $320/night</option>
+                        <option value="garden-suite">Garden Sanctuary Suite – $180/night</option>
+                        <option value="coast-std">Standard Coast Room – $150/night</option>
+                        <option value="garden-terrace">Deluxe Garden Terrace – $250/night</option>
+                        <option value="atrium-std">Standard Atrium Room – $150/night</option>
+                    </select>
+                </div>
+
+                <!-- Services checkboxes -->
+                <div class="form-group">
+                    <label>Additional Services</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="service" value="spa" /> Spa Package
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="service" value="dining" /> Fine Dining Experience
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="service" value="transfer" /> Airport Transfer
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="service" value="events" /> Event / Nightlife Access
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Board type radios -->
+                <div class="form-group">
+                    <label>Board Type</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="board" value="ro" checked /> Room Only
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="board" value="bb" /> Bed &amp; Breakfast
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="board" value="hb" /> Half Board
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="board" value="fb" /> Full Board
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="requests">Special Requests</label>
+                    <textarea id="requests" name="requests" rows="4" placeholder="Tell us about any special requests, dietary needs, or celebration details…"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-gold confirm">CONFIRM RESERVATION</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <!-- ===================== RESTAURANT ===================== -->
+   <section class="restaurant-section" id="restaurant">
+      <!-- Top half with the background image -->
+      <div class="restaurant-hero-bg">
+        <div class="container">
+          <h2 class="section-title">HOTEL RESTAURANT</h2>
+            <a  class="learn-more">LEARN MORE</a>
+        </div>
+      </div>
+
+      <!-- Bottom half / Overlapping Card -->
+      <div class="restaurant-content-wrapper">
+        <div class="container">
+          <div class="restaurant-content-card">
+            <p class="restaurant-desc">
+              EXPERIENCE A SYMPHONY OF LOCAL FLAVORS AND INTERNATIONAL FINE DINING. OUR
+              KITCHEN UTILIZES ORGANIC INGREDIENTS HARVESTED FROM OUR 2.5-HECTARE PRIVATE
+              ESTATE, PAIRED WITH THE FRESHEST CATCH FROM THE BLACK SEA, JUST 20 METERS FROM
+              YOUR TABLE.
+            </p>
+
+            <h3 class="categories-title">MENU CATEGORIES</h3>
+
+            <div class="menu-categories">
+              <div class="menu-cat-card">
+                <img src="pics/foodpics/pic1.png" alt="Seafood" />
+              </div>
+              <div class="menu-cat-card">
+                <img src="pics/foodpics/pic2.png" alt="Fine Dining" />
+              </div>
+              <div class="menu-cat-card">
+                <img src="pics/foodpics/pic3.png" alt="Desserts" />
+              </div>
+              <div class="menu-cat-card">
+                <img src="pics/foodpics/pic4.png" alt="Cocktails" />
+              </div>
+            </div>
+
+            <div class="restaurant-actions">
+              <a  class="btn-restaurant">SEE FULL MENU</a>
+              <a  class="btn-restaurant">BOOK A TABLE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SPA ===================== -->
+    <section class="spa-section" id="spa">
+      <div class="container">
+        <h2 class="section-title">S P A</h2>
+        
+        <div class="spa-layout">
+          
+          <!-- Left Side: 2x2 Grid Flexbox -->
+          <div class="spa-images">
+            <div class="spa-img-card">
+              <img src="pics/spaPics/pic1.png" alt="massage" class="spa-img" />
+              <div class="spa-overlay">
+                <span class="overlay-text">MASSAGE</span>
+              </div>
+            </div>
+
+            <div class="spa-img-card">
+              <img src="pics/spaPics/pic2.png" alt="sauna & Pool" class="spa-img" />
+              <div class="spa-overlay">
+                <span class="overlay-text">SAUNA & POOL</span>
+              </div>
+            </div>
+
+            <div class="spa-img-card">
+              <img src="pics/spaPics/pic3.png" alt="gym" class="spa-img" />
+              <div class="spa-overlay">
+                <span class="overlay-text">GYM</span>
+              </div>
+            </div>
+
+            <div class="spa-img-card">
+              <img src="pics/spaPics/pic4.png" alt="yoga" class="spa-img" />
+              <div class="spa-overlay">
+                <span class="overlay-text">YOGA & FITNESS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Side: Content -->
+          <div class="spa-content">
+            <h3>THE VELORISMA SANCTUARY</h3>
+            <p class="spa-tagline">WHERE ANCIENT SERENITY MEETS MODERN WELLNESS</p>
+            <p class="spa-desc">
+              RECONNECT YOUR MIND AND BODY WITHIN OUR 2.5-HECTARE COASTAL SANCTUARY.
+              OUR SANCTUARY OFFERS A HOLISTIC ESCAPE, UTILIZING ORGANIC BOTANICALS AND
+              THE CALMING SOUNDS OF THE BLACK SEA TO PROVIDE A TRULY IMMERSIVE
+              RESTORATIVE EXPERIENCE.
+            </p>
+            <div class="spa-actions">
+              <a class="btn learnMore">LEARN MORE</a>
+              <a class="btn spa-book">BOOK A SESSION</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EVENTS ===================== -->
+    <section class="events-section" id="events">
+      <div class="container">
+        <h2 class="section-title">E V E N T S</h2>
+        <div class="events-grid">
+
+          <div class="event-card">
+            <div class="event-card__img">
+              <img src="pics/eventsPics/pic1.png"
+                   alt="Coastal wedding ceremony at Velorisma" />
+            </div>
+            <div class="event-card__body">
+              <h3>WEDDINGS</h3>
+              <p>COASTAL VOWS,<br/>ETERNAL MEMORIES.</p>
+              <p class="event-price">STARTING AT $2,500</p>
+              <a href="#contact" class="btn spa-book view-more">VIEW MORE</a>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <div class="event-card__img">
+              <img src="pics/eventsPics/pic2.png"
+                   alt="Executive summit at Velorisma conference hall" />
+            </div>
+            <div class="event-card__body">
+              <h3>EXECUTIVE SUMMITS</h3>
+              <p>SLEEK SPACES,<br/>STRATEGIC NETWORKING.</p>
+              <p class="event-price">STARTING AT $1,000</p>
+              <a href="#contact" class="btn spa-book view-more">VIEW MORE</a>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <div class="event-card__img">
+              <img src="pics/eventsPics/pic3.png"
+                   alt="Velorisma Nights exclusive beach party" />
+            </div>
+            <div class="event-card__body">
+              <h3>VELORISMA NIGHTS</h3>
+              <p>SUNSET COCKTAILS,<br/>EXCLUSIVE BEATS.</p>
+              <p class="event-price">$50 – $1,000</p>
+              <a href="#contact" class="btn spa-book view-more">VIEW MORE</a>
+            </div>
+          </div>
+
+          <div class="event-card">
+            <div class="event-card__img">
+              <img src="pics/eventsPics/pic4.png"
+                   alt="Private gala dinner at Velorisma" />
+            </div>
+            <div class="event-card__body">
+              <h3>PRIVATE GALAS</h3>
+              <p>ARCHITECTURAL LUXURY,<br/>ELITE MILESTONES.</p>
+              <p class="event-price">STARTING AT $1,500</p>
+              <a href="#contact" class="btn spa-book view-more">VIEW MORE</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+   
+    <!-- ===================== THANK YOU BANNER ===================== -->
+    <div class="thankyou-banner">
+      <div class="container">
+        <h2>THANKS FOR CHOOSING US!</h2>
+        <a href="#reservation" class="btn btn-gold">RESERVE NOW</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <span class="logo-name">VELORISMA</span>
+        <span class="logo-sub">The Grand</span>
+        <span class="logo-tag">RESORT &amp; SPA HOTEL</span>
+        <p class="footer-tagline">A PRIVATE RESORT &amp; ESTATE.</p>
+        <div class="footer-social">
+          <a href="#">@VELORISMA</a>
+          <a href="#">@VELORISMA.HOTEL</a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>NAVIGATION</h4>
+        <ul>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#rooms">ROOMS</a></li>
+          <li><a href="#reservation">RESERVATION</a></li>
+          <li><a href="#restaurant">RESTAURANT</a></li>
+          <li><a href="#spa">SPA</a></li>
+          <li><a href="#events">EVENTS</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>CONTACT</h4>
+        <p>+995 599 47 71 78</p>
+        <p>velorisma@gmail.com</p>
+      </div>
+
+      <div class="footer-signup">
+        <h4>SIGN UP</h4>
+        <p>Subscribe for exclusive offers and news.</p>
+        <form action="#" method="post" class="signup-form">
+          <input type="email" name="signup-email" placeholder="your@email.com" required />
+          <button type="submit" class="btn btn-gold join">JOIN</button>
+        </form>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 VELORISMA RESORT &amp; SPA. ALL RIGHTS RESERVED.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
