@@ -4,7 +4,7 @@ A modern, responsive front-end web application and interactive UI prototype for 
 
 ---
 
-## ✨ Features
+## Features
 
 * **Interactive Booking Systems:** Multi-step reservation UI for rooms, dining, spa services, and event registration.
 * **Dynamic Client-Side Logic:** Real-time form handling and instant reservation confirmations built using JavaScript.
@@ -13,7 +13,7 @@ A modern, responsive front-end web application and interactive UI prototype for 
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 * **HTML5:** Semantic page layout and structure.
 * **CSS3:** Custom styling, layout design, and smooth interface transitions.
@@ -21,7 +21,7 @@ A modern, responsive front-end web application and interactive UI prototype for 
 
 ---
 
-## 🚀 How to View & Run
+## How to View & Run
 
 ### Option 1: Open Directly in Browser
 1. Clone the repository:
