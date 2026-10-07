@@ -1,4 +1,4 @@
-# 🏨 Velorisma — Coastal Resort Hotel Website
+# Velorisma — Coastal Resort Hotel Website
 
 A modern, responsive front-end web application and interactive UI prototype for **Velorisma**, a fictional luxury coastal resort. The platform allows guests to explore resort amenities, check room availability, and complete client-side booking flows.
 
